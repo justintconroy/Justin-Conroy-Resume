@@ -1,0 +1,20 @@
+tex2mail is a perl script to convert TeX files into
+plain text files: various mathematical symbols
+(sums, products, integrals, sub/superscripts, fractions, square
+roots,...) are replaced by "ascii art" that spreads over
+multiple lines if necessary. The result attemps to approach WYSIWYG
+and is more readable to human beings than the flat-style TeX code.
+
+Installation:
+Adapt the source code to your local needs by change of
+the first line of the tex2mail file for the correct
+full path name of your perl executable.
+
+Invocation:
+
+tex2mail [-linelength <bytesperline> ] [-debug <level> ]
+         [-by_par] [-TeX] [-ragged] [-noindent] < foo.tex > foo.txt
+ 
+author: Ilya Zakahrevich <ilya@math.ohio-state.edu>
+        http://www.math.ohio-state.edu/people/display/display.php?ID=376
+source: ftp://ftp.math.ohio-state.edu/pub/users/ilya/tex/tex2mail

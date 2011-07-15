@@ -1,0 +1,37 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.2in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+\moveleft.5\hoffset\centerline{\large\bf Justin T. Conroy}
+% Draw a horizontal line the whole width of resume:
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+\moveleft.5\hoffset\centerline{15345 Calle Sueno}
+\moveleft.5\hoffset\centerline{Morgan Hill, CA 95037}
+\moveleft.5\hoffset\centerline{(708) 469-9246}
+\moveleft.5\hoffset\centerline{Justin@Conroy.in}
+
+
+\begin{resume}
+
+
+% \sl will be bold italic in New Century Schoolbook (or
+% any postscript font) and just slanted in
+% Computer Modern (default) font
+\input{"include/education"}
+
+\input{"include/comp_skills"}
+
+\input{"include/experience"}
+
+\input{"include/projects"}
+
+\input{"include/extra"}
+\end{resume}
+\end{document}

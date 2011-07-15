@@ -1,0 +1,8 @@
+.*.swp
+*~
+*.fls
+*.aux
+*.temp
+*.pdf
+*.ps
+*.log
