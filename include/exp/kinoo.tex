@@ -7,5 +7,10 @@ FreeRTOS as a base. It included WiFi and Bluetooth Low Energy (BLE)
 connectivity. It also included some multicolored LEDs which played patterns
 synced to music which was played on an onboard speaker. I designed a custom file
 format with FlatBuffers to allow designers to create complex patterns and upload
-them to the device filesystem (LittleFS).
+them to the device filesystem (LittleFS). The controller also included an
+Inertial Measurement Unit (IMU), which included a gyroscope, accelerometer, and
+magnetometer. The firmware processed data from this hardware to do complex
+gesture recognition. In addition, the firmware was able to update itself using
+Over-The-Air (OTA) updates. I also wrote custom code for managing updates to
+media files on the device over the internet.
 \end{description}
