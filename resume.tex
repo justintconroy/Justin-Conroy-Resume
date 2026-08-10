@@ -1,40 +1,23 @@
 % LaTeX resume using res.cls
-\documentclass[margin]{res}
+\documentclass[centered, overlapped]{res}
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-\setlength{\textwidth}{5.2in} % set width of text portion
-%\widowpenalties 1 10000
+
+\widowpenalties 1 10000
+%\raggedright
 %\raggedbottom
 
 \begin{document}
-
-% Center the name over the entire width of resume:
-\moveleft.5\hoffset\centerline{\large\bf Justin T. Conroy}
-% Draw a horizontal line the whole width of resume:
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
-\moveleft.5\hoffset\centerline{801 S. Plymouth Ct. \#216}
-\moveleft.5\hoffset\centerline{Chicago, IL 60605}
-\moveleft.5\hoffset\centerline{(708) 469-9246}
-\moveleft.5\hoffset\centerline{Justin@Conroy.in}
-
+\name{\Large Justin T. Conroy}
+\address{801 S. Plymouth Ct. \#216\\
+         Chicago, IL 60605\\
+         (708) 469-9246\\
+         Justin@Conroy.in}
 
 \begin{resume}
-\raggedright
-
-
-% \sl will be bold italic in New Century Schoolbook (or
-% any postscript font) and just slanted in
-% Computer Modern (default) font
 \input{"include/experience"}
-
 \input{"include/education"}
-
 \input{"include/comp_skills"}
-
 %\input{"include/projects"}
-
 %\input{"include/extra"}
 \end{resume}
 \end{document}
